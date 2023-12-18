@@ -6,6 +6,7 @@ import Dashboard from "./components/Dashboard/index.tsx";
 import Register from "./components/register/index.tsx";
 import { Provider } from "react-redux";
 import { store } from "./redux/store.ts";
+import ProtectedRoute from "./components/Protected/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -14,11 +15,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/signup",
-    element: <Register userAction="signup" />,
+    element: (
+      <ProtectedRoute>
+        <Register userAction="signup" />
+      </ProtectedRoute>
+    ),
   },
   {
     path: "/login",
-    element: <Register userAction="login" />,
+    element: (
+      <ProtectedRoute>
+        <Register userAction="login" />
+      </ProtectedRoute>
+    ),
   },
 ]);
 
