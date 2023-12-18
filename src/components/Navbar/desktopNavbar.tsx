@@ -6,7 +6,13 @@ import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { Link } from "react-router-dom";
 import { logout } from "../../redux/slice/userSlice";
 
-const navbarOptions = ["Home", "Users", "Projects", "Tasks", "Reporting"];
+export const navbarOptions = [
+  "Home",
+  "Users",
+  "Projects",
+  "Tasks",
+  "Reporting",
+];
 
 export default function DesktopNavbar() {
   const user = useAppSelector((state) => state.user);
