@@ -1,0 +1,44 @@
+.headline {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.subtitle1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.text1 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px
+}
+
+
+.text2,
+.text3 {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.text2 {
+
+    font-weight: 400;
+}
+
+.text3 {
+    font-weight: 500;
+}
