@@ -40,6 +40,7 @@ export default function Register({
         password: input.password,
       });
       dispatch(login(data.data));
+      if (typeof window !== "undefined") window.location.href = "/";
       console.log(data);
     } catch (error) {
       if (error instanceof AxiosError) {

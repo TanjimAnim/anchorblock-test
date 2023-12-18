@@ -9,7 +9,6 @@ const buttonStyle = () => {
 
 export default function UserTable() {
   const user = useAppSelector((state) => state.user);
-  console.log(user.token);
   return (
     <>
       {user.token ? (
@@ -30,7 +29,11 @@ export default function UserTable() {
           <UserList />
         </>
       ) : (
-        <div>Please sign in to see data</div>
+        <div className="flex items-center justify-center min-h-[calc(100vh-76px)]">
+          <h1 className={`${textStyle.headline} text-[#101828]`}>
+            Please sign in to see data
+          </h1>
+        </div>
       )}
     </>
   );
